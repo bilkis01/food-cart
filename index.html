@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,17 +8,162 @@
     <title>Food Cart</title>
     <link rel="stylesheet" href="style.css">
     <!-- bootstrap CDN -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
-<body>
-  <!-- navbar start -->
-  <nav class=" header">
-    <div class="container p-2 text-center text-uppercase fw-bolder fs-2">
-      <a class="h-title text-decoration-none text-white" href="#">Food-<span class="text-warning">Cart</span></a>
-    </div>
-  </nav>
-  <!-- Navbar end -->
 
+<body>
+    <!-- navbar start -->
+    <nav class=" header">
+        <div class="container p-2 text-center text-uppercase fw-bolder fs-2">
+            <a class="h-title text-decoration-none text-white" href="#">Food-<span class="text-warning">Cart</span></a>
+        </div>
+    </nav>
+    <!-- Navbar end -->
+
+    <!-- left side div -->
+   
+   <div class="container">
+     <!-- card-1 -->
+
+    <div class="card mb-3 mt-4" style="max-width: 540px;">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="images/blog-1.jpg" class="img-fluid rounded-start" alt="...">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">Beef Burger</h5>
+              <nav aria-label="Page navigation example">
+                <ul class="pagination">
+                  <li class="page-item">
+                    <button class="page-link" onclick="decreaseNumber()">-</button>
+                </li>
+                  <li class="page-item">
+                    <input class="page-link" value="0" id="textBox"/>
+                </li>
+                  <li class="page-item">
+                    <button class="page-link" onclick="increaseNumber()">+</button>
+                </li>
+            
+                <div class="col-4 mx-2 ">
+                    <h5>$<span id="itemval">0.00 </span></h5>
+                    </div>
+                  
+                </ul>
+              </nav>
+          </div>
+        </div>
+      </div>
+   </div>
+   <!-- card-2 -->
+
+   <div class="card mb-3 mt-4" style="max-width: 540px;">
+    <div class="row g-0">
+      <div class="col-md-4">
+        <img src="images/blog-2.jpg" class="img-fluid rounded-start" alt="...">
+      </div>
+      <div class="col-md-8">
+        <div class="card-body">
+          <h5 class="card-title">Chicken Shawrma</h5>
+          <nav aria-label="Page navigation example">
+            <ul class="pagination">
+              <li class="page-item">
+                <button class="page-link" onclick="decreaseNumber()">-</button>
+            </li>
+              <li class="page-item">
+                <input class="page-link" value="0" id="textBox"/>
+            </li>
+              <li class="page-item">
+                <button class="page-link" onclick="increaseNumber()">+</button>
+            </li>
+        
+            <div class="col-4 mx-2 ">
+                <h5>$<span id="itemval">0.00 </span></h5>
+                </div>
+              
+            </ul>
+          </nav>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- card-3 -->
+<div class="card mb-3 mt-4" style="max-width: 540px;">
+    <div class="row g-0">
+      <div class="col-md-4">
+        <img src="images/food-4.png" class="img-fluid rounded-start" alt="...">
+      </div>
+      <div class="col-md-8">
+        <div class="card-body">
+          <h5 class="card-title">Beef Black Burger</h5>
+          <nav aria-label="Page navigation example">
+            <ul class="pagination">
+              <li class="page-item">
+                <button class="page-link" onclick="decreaseNumber()">-</button>
+            </li>
+              <li class="page-item">
+                <input class="page-link" value="0" id="textBox"/>
+            </li>
+              <li class="page-item">
+                <button class="page-link" onclick="increaseNumber()">+</button>
+            </li>
+        
+            <div class="col-4 mx-2 ">
+                <h5>$<span id="itemval">0.00 </span></h5>
+                </div>
+              
+            </ul>
+          </nav>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- card-4 -->
+<div class="card mb-3 mt-4" style="max-width: 540px;">
+    <div class="row g-0">
+      <div class="col-md-4">
+        <img src="images/food-8.png" class="img-fluid rounded-start" alt="...">
+      </div>
+      <div class="col-md-8">
+        <div class="card-body">
+          <h5 class="card-title">Beef Pizza</h5>
+          <nav aria-label="Page navigation example">
+            <ul class="pagination">
+              <li class="page-item">
+                <button class="page-link" onclick="decreaseNumber()">-</button>
+            </li>
+              <li class="page-item">
+                <input class="page-link" value="0" id="textBox"/>
+            </li>
+              <li class="page-item">
+                <button class="page-link" onclick="increaseNumber()">+</button>
+            </li>
+        
+            <div class="col-4 mx-2 ">
+                <h5>$<span id="itemval">0.00 </span></h5>
+                </div>
+              
+            </ul>
+          </nav>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+   </div>
 
 
 
@@ -39,6 +185,9 @@
 
 
     <!-- bootstrap cdn -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
